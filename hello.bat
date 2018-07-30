@@ -14,9 +14,10 @@ REM ======================================================================
 pushd "%cmdDir%"
 
 set CSC=C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
+set src=%cmdName%.cs
 
-echo %CSC% %*
-%CSC% %*
+echo %CSC% %src%
+%CSC% %src%
 
 set exitCode=%errorlevel%
 
